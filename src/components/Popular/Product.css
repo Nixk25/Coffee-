@@ -1,0 +1,26 @@
+.product{
+    background-color: white;
+    border-radius: 15px;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+.product-texts{
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-image{
+    border-radius: 15px;
+}
+
+.categories{
+    display: flex;
+    gap: 20px;
+}
+
+.product-image img{
+    width: 250px;
+    border-radius: 15px;
+    height: auto;
+}
