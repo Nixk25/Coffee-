@@ -1,5 +1,16 @@
 .landingPage{
     margin-bottom: 100px;
+    position: relative;
+}
+
+.landingPage::before{
+  content: "";
+  bottom: 0;
+  width: 100%;
+  height:100px;
+  background: linear-gradient(to top,#1A1B1F, transparent);
+  position: absolute;
+  z-index: 100;
 }
 
 
@@ -10,8 +21,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100dvh;
-    filter: blur(2px);
-    box-shadow: 0 0 0 10px #000;
     width: 100%;
 
 }
@@ -33,13 +42,20 @@
     align-items: center;
 }
 
+.container-links{
+  position: fixed;
+  top: 5%;
+  left: 42%;
+  z-index: 102;
+}
+
 .order-btn__link{
   text-decoration: none;
   color: #000;
 }
 
 .logo img{
-    height: 90px;
+    height: auto;
     width: 130px;
     margin-top:10px;
     margin-left:10px;
@@ -53,6 +69,11 @@
     gap:20px;
     font-size: 25px;
     font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+
 }
 
 .link{
@@ -86,6 +107,7 @@
     width: 50%;
     position: absolute;
     top: 20%;
+    padding: 10px;
 }
 
 .main-text{
@@ -99,6 +121,7 @@
 .colored{
     color: var(--main-color);
 }
+
 
 .second-text{
     color: #e5e5e5;
@@ -127,7 +150,6 @@
 }
 
 #menu {
-    z-index: 2;
     display: none;
   }
   
@@ -204,6 +226,7 @@
     position: fixed;
     top: 2%;
     right: 5%;
+    z-index: 102;
   }
   
   .menu-bg {
@@ -214,6 +237,7 @@
     background: radial-gradient(circle, #F9D9AA, #F9D9AA);
     border-radius: 50%;
     transition: 0.3s ease;
+    z-index: 101;
   }
   
   .change {
@@ -244,12 +268,9 @@
 
 
 @media(max-width:1350px){
-    .link{
-        color: #000;
-    }
 
     .links{
-        background: rgba(255, 255, 255, 0.4);
+        background: rgba(0, 0, 0, 0.1);
         padding: 10px;
         border-radius: 20px;
         backdrop-filter: blur(4px);
@@ -277,11 +298,23 @@
     }
 
     .links{
-        font-size: 16px;
+        display: none;
+    }
+    
+    #menu{
+      display: flex;
     }
 
     .cart{
         right: 9%;
+    }
+
+    .bg-image{
+      filter: blur(3px);
+    }
+
+    .landingPage::before{
+      display: none;
     }
 }
 
@@ -293,15 +326,7 @@
     .nav{
         padding: 10px;
     }
-    
-    .cart{
-        top:90dvh;
-        right: 2%;
-    }
 
-    #menu{
-        display: flex;
-    }
 }
 
 

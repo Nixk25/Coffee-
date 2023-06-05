@@ -18,7 +18,7 @@ const Product = ({data}) => {
             </div>
           </div>
           <div className="right">
-            <div className="price">{price}</div>
+            <div className="price"><strong>{price}</strong></div>
           </div>
         </div>
     </div>

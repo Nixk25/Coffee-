@@ -36,16 +36,18 @@ function menuOnClick() {
           </nav> 
         </div>
         <div class="menu-bg" id="menu-bg"></div>
-        <div className="links">
-          <Link className='link' to="/">Home</Link>
-          <Link className='link' to="/About">About us</Link>
-          <Link className='link' to="/Contact">Contact us</Link>
+        <div className="container-links">
+          <div className="links">
+            <Link className='link' to="/">Home</Link>
+            <Link className='link' to="/About">About us</Link>
+            <Link className='link' to="/Contact">Contact us</Link>
+          </div>
         </div>
       </div>
       <div className="texts">
         <div className="main-text">Enjoy your <span className='colored'>coffee</span> <br /> before work</div>
         <div className="second-text">Boost your <span className='colored'>productivity</span> and build your <br /> mood with a <span className='colored'>a cup of our coffee</span> in the morning</div>
-        <button className="order-btn"><Link className='order-btn__link' to="/Contact">Book Now</Link></button>
+        <Link className='order-btn__link' to="/Contact"><button className='order-btn'>Book Now</button></Link>
       </div>
       </div>
     </section>
