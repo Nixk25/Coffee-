@@ -2,7 +2,8 @@
     background-color: white;
     border-radius: 15px;
     border: 5px solid rgb(255, 255, 255);
-    width: max-content;
+    max-width: max-content;
+    width: 100%;
     z-index: 2;
 }
 
@@ -27,6 +28,7 @@
 .categories{
     display: flex;
     gap: 20px;
+    font-size: 12px;
 }
 
 .category-first{
@@ -42,11 +44,18 @@
 }
 
 
-
 .product-image img{
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     border-radius: 15px;
     height: auto;
+}
+
+@media(max-width:320px){
+    .categories{
+        width: max-content;
+        flex-direction: column;
+    }
 }
 
 

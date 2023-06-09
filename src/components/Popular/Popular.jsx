@@ -7,7 +7,7 @@ const Popular = () => {
   return (
     <section className="popular">
       <div className="container">
-        <div className="popular-headline">
+        <div className="headline">
           Popular <span className='colored underlined'>Now</span> 
         </div>
         <div className="products">

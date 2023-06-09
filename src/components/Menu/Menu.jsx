@@ -7,7 +7,7 @@ const Menu = () => {
   return (
     <section className='menu'>
       <div className="container">
-        <div className="menu-headline">
+        <div className="headline">
           Special menu <span className='colored underlined'>For you </span>
         </div>
         <div className="menu-products">

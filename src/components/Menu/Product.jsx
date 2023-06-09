@@ -12,7 +12,11 @@ const Product = ({data}) => {
           <div className="left">
             <div className="menu-product__name"><strong>{productName}</strong></div>
             <div className="categories">
-              <div className="descryption">{descryption}</div>
+              <div className="descryption-wrapper">
+                <p className='descryption'>
+                  {descryption}
+                </p>
+              </div>
             </div>
           </div>
           <div className="right">
