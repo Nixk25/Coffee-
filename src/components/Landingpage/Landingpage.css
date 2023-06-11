@@ -48,6 +48,16 @@
   left: 50%;
   transform: translate(-50%,0);
   z-index: 102;
+  animation: 1s ease-in-out floatFromUp;
+}
+
+@keyframes floatFromUp{
+  0%{
+    top: -100%;
+  }
+  100%{
+    top: 5%;
+  }
 }
 
 .order-btn__link{
@@ -74,8 +84,8 @@
     border-radius: 10px;
     padding: 20px;
     backdrop-filter: blur(10px);
-
 }
+
 
 .link{
     color: #fff;

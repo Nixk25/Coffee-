@@ -5,6 +5,11 @@
     max-width: max-content;
     width: 100%;
     z-index: 2;
+    transition: all ease 0.3s;
+}
+
+.product:hover{
+    scale: 1.1;
 }
 
 .product-texts{

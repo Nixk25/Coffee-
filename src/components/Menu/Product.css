@@ -4,8 +4,13 @@
     border: 1px solid rgba(255, 255, 255,0.7);
     width: 100%;
     max-width: 300px;
-    height: auto;
+    height:500px;
     z-index: 2;
+    transition: all ease 0.3s;
+}
+
+.menu-product:hover{
+    scale: 1.1;
 }
 
 .menu-product__texts{
