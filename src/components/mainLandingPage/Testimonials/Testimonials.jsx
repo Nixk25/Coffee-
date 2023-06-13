@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Testimonials.css"
-import firstTestimonials from "../../assets/third.jpg";
+import firstTestimonials from "../../../assets/third.jpg";
 
 
 const Testimonials = () => {

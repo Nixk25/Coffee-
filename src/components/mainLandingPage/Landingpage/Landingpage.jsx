@@ -1,8 +1,8 @@
 import React from 'react'
 import "./Landingpage.css"
-import logo from "../../assets/logo.png"
+import logo from "../../../assets/logo.png"
 import {Link} from "react-router-dom"
-
+import Nav from "../../Navbar/Nav"
 
 
 
@@ -36,13 +36,7 @@ function menuOnClick() {
           </nav> 
         </div>
         <div class="menu-bg" id="menu-bg"></div>
-        <div className="container-links">
-          <div className="links">
-            <Link className='link' to="/">Home</Link>
-            <Link className='link' to="/About">About us</Link>
-            <Link className='link' to="/Contact">Contact us</Link>
-          </div>
-        </div>
+        <Nav/>
       </div>
       <div className="texts">
         <div className="main-text">Enjoy your <span className='colored'>coffee</span> <br /> before work</div>

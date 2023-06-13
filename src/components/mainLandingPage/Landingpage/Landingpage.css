@@ -16,7 +16,7 @@
 
 .bg-image{
     position: relative;
-    background-image: url(../../assets/CoffeeLandingP.jpg);
+    background-image: url(../../../assets/CoffeeLandingP.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

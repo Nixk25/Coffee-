@@ -1,6 +1,6 @@
-import image1 from "../../assets/Coffe1.png"
-import image2 from "../../assets/Coffe2.png"
-import image3 from "../../assets/Coffe3.png"
+import image1 from "../../../assets/Coffe1.png"
+import image2 from "../../../assets/Coffe2.png"
+import image3 from "../../../assets/Coffe3.png"
 
 
 

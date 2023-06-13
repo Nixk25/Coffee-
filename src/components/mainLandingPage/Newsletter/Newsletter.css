@@ -23,7 +23,7 @@
 
 #bg-image__newsletter{
     position: relative;
-    background-image: url(../../assets/newsletter-bg.jpg);
+    background-image: url(../../../assets/newsletter-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:0 10%;

@@ -1,9 +1,9 @@
 import React from 'react'
-import LandingPage from "../Landingpage/Landingpage"
-import Popular from "../Popular/Popular"
-import Menu from "../Menu/Menu"
-import Testimonials from "../Testimonials/Testimonials"
-import Newsletter from "../Newsletter/Newsletter"
+import LandingPage from "../mainLandingPage/Landingpage/Landingpage"
+import Popular from "../mainLandingPage/Popular/Popular"
+import Menu from "../mainLandingPage/Menu/Menu"
+import Testimonials from "../mainLandingPage/Testimonials/Testimonials"
+import Newsletter from "../mainLandingPage/Newsletter/Newsletter"
 import Footer from '../Footer/Footer'
 
 

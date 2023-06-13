@@ -1,9 +1,9 @@
-import imageWafle from "../../assets/Wafle.jpg";
-import image4 from "../../assets/Coffe4.jpg";
-import image5 from "../../assets/Coffe5.png";
-import image6 from "../../assets/cold-coffee.jpg";
-import imageSandwich from "../../assets/sandwich.jpg";
-import imageHotMilk from "../../assets/hot-milk.jpg";
+import imageWafle from "../../../assets/Wafle.jpg";
+import image4 from "../../../assets/Coffe4.jpg";
+import image5 from "../../../assets/Coffe5.png";
+import image6 from "../../../assets/cold-coffee.jpg";
+import imageSandwich from "../../../assets/sandwich.jpg";
+import imageHotMilk from "../../../assets/hot-milk.jpg";
 
 
 
