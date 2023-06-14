@@ -1,0 +1,25 @@
+.chooseUs{
+    margin-top: 100px;
+}
+
+
+.headline-wrapper{
+    text-align: center;
+}
+
+.headline-chooseUs{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.desc-chooseUs{
+    margin-bottom: 50px;
+}
+
+.card-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
