@@ -14,12 +14,13 @@
 
 .desc-chooseUs{
     margin-bottom: 50px;
+    font-size: 22px;
 }
 
 .card-section{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
     flex-wrap: wrap;
 }
