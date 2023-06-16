@@ -5,7 +5,6 @@
   left: 50%;
   transform: translate(-50%,0);
   z-index: 102;
-  animation: 1s ease-in-out floatFromUp;
 }
 
 .links{
@@ -47,12 +46,17 @@
 .active{
   color: var(--action-color);
 }
-  
-  @keyframes floatFromUp{
-    0%{
-      top: -100%;
-    }
-    100%{
-      top: 5%;
-    }
-  }
+
+
+@media (max-width:750px){
+.links{
+  font-size: 20px;
+}
+}
+
+@media (max-width:600px){
+.links{
+  display: none;
+}
+}
+

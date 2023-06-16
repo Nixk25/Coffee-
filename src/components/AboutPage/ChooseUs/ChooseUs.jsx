@@ -1,7 +1,9 @@
 import React from 'react'
 import "./ChooseUs.css"
-import cards from "./cards-texts"
-import CardItem from './CardItem'
+import FirstCard from './Cards/FirstCard'
+import SecondCard from './Cards/SecondCard'
+import ThirdCard from './Cards/ThirdCard'
+import FourthCard from './Cards/FourthCard'
 
 
 const ChooseUs = () => {
@@ -17,12 +19,10 @@ const ChooseUs = () => {
           </div>
         </div>
         <section className="card-section">
-          {cards.map((cardText)=>{
-            const {id} = cardText
-            return(
-              <CardItem key={id} texts={cardText}/>
-            )
-          })}
+         <FirstCard/>
+         <SecondCard/>
+         <ThirdCard/>
+         <FourthCard/>
         </section>
       </div>
     </section>

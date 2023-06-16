@@ -1,7 +1,7 @@
 import React from 'react';
 import "./AboutUs.css";
 import bgAbout from "../../../assets/background-about.jpg"
-
+import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
   return (
@@ -27,9 +27,7 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="about-btn__wrapper">
-              <button className='about-btn'>
-                Get in touch 
-              </button>
+              <Link className="order-btn__link" to="/Contact"><button className="order-btn">Get in touch</button></Link>
             </div>
           </div>
         </div>

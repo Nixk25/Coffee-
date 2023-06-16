@@ -1,106 +1,3 @@
-.landingPage{
-    margin-bottom: 100px;
-    position: relative;
-}
-
-.landingPage::before{
-  content: "";
-  bottom: 0;
-  width: 100%;
-  height:100px;
-  background: linear-gradient(to top,#1A1B1F, transparent);
-  position: absolute;
-  z-index: 100;
-}
-
-
-.bg-image{
-    position: relative;
-    background-image: url(../../../assets/CoffeeLandingP.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100dvh;
-    width: 100vw;
-}
-
-.container{
-    width: 90%;
-    margin: auto;
-}
-
-
-.nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-    position: absolute;
-    top: 0;
-    width: 90%;
-    align-items: center;
-}
-
-
-.logo img{
-    height: auto;
-    width: 130px;
-    margin-top:10px;
-    margin-left:10px;
-    margin-bottom: 5px;
-}
-
-.texts{
-    width: 50%;
-    position: absolute;
-    top: 20%;
-    padding: 10px;
-}
-
-.main-text{
-    font-size: 60px;
-    line-height: 1.2;
-    letter-spacing: 3px;
-    margin-top: 30px;
-    color: #e5e5e5;
-}
-
-.colored{
-    color: var(--main-color);
-}
-
-
-.second-text{
-    color: #e5e5e5;
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-.order-btn{
-    padding: 10px;
-    padding-inline: 20px;
-    background-color: var(--action-color) ;
-    border-radius: 10px;
-    font-weight: 700;
-    margin-top: 20px;
-    cursor: pointer;
-    border: 2px solid transparent;
-    transition: all ease 0.3s;
-}
-
-.order-btn:hover{
-    scale: 1.1;
-    background-color: transparent;
-}
-
-.order-btn__link:hover > .order-btn{
-  color: var(--action-color);
-}
-
-.order-btn:active{
-    scale: 0.8;
-}
-
 #menu {
     display: none;
   }
@@ -219,35 +116,10 @@
     width: 520px;
     height: 460px;
     transform: translate(60%,-50%);
-  }
-
-
-
-
-
-@media (max-width:600px){
-    .logo img{
-        height: 50px;
-        width:auto
-    }
-
-    .texts{
-        width: 90%;
-    }
-
-    .main-text{
-        font-size: 40px;
-    }
-
-    .bg-image{
-      filter: blur(3px);
-    }
-
-    .landingPage::before{
-      display: none;
-    }
 }
 
-
-
-
+@media (max-width:600px){
+    #menu{
+        display: flex;
+    }
+}

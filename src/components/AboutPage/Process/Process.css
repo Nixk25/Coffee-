@@ -1,0 +1,19 @@
+.process{
+    margin-top: 100px;
+}
+
+.process-wrapper{
+    width: 45%;
+}
+
+.headline-process{
+    font-size: 40px;
+}
+
+.process-desc{
+    margin-top: 20px;
+}
+
+.process-btn{
+    width: max-content;
+}
