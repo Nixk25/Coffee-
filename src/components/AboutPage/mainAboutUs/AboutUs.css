@@ -1,71 +1,78 @@
-.about{
-    margin-top: 10%;
+.about {
+  margin-top: 30vh;
 }
 
-.about-headline__wrapper{
-    text-align: center;
+.about-headline__wrapper {
+  text-align: center;
 }
 
-.headline-about{
-    font-size: 40px;
-    margin-bottom: 10px;
+.headline-about {
+  font-size: 40px;
+  margin-bottom: 10px;
 }
 
-.desc{
-    margin-bottom: 30px;
-    font-size: 22px;
+.desc {
+  margin-bottom: 30px;
+  font-size: 22px;
 }
 
-.main-about__section{
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px;
-    align-items: center;
+.main-about__section {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  align-items: center;
 }
 
-.about-image{
-    border-radius: 15px;
-    display: flex;
+.about-image {
+  border-radius: 15px;
+  display: flex;
 }
 
-.about-image img{
-    max-width: 450px;
-    width: 100%;
-    border-radius: 15px;
-    border: 2px solid #fff;
-    display: flex;
-    align-self: flex-end;
+.about-image img {
+  max-width: 450px;
+  width: 100%;
+  border-radius: 15px;
+  border: 2px solid #fff;
+  display: flex;
+  align-self: flex-end;
 }
 
-.right-side{
-    flex-basis: 50%;
-    width: 100%;
+.right-side {
+  flex-basis: 50%;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+}
+
+.main-texts {
+  margin-bottom: 20px;
+}
+
+.about-btn {
+  padding: 10px;
+  padding-inline: 20px;
+  background-color: var(--action-color);
+  border-radius: 10px;
+  font-weight: 700;
+  margin-top: 20px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all ease 0.3s;
+}
+
+.about-btn:hover {
+  scale: 1.1;
+  background-color: transparent;
+  color: var(--action-color);
+}
+
+.about-btn:active {
+  scale: 0.8;
+}
+
+@media (max-width: 700px) {
+  .main-about__section {
     flex-direction: column;
-    display: flex;
-}
-
-.main-texts{
-    margin-bottom: 20px;
-}
-
-.about-btn{
-    padding: 10px;
-    padding-inline: 20px;
-    background-color: var(--action-color) ;
-    border-radius: 10px;
-    font-weight: 700;
-    margin-top: 20px;
-    cursor: pointer;
-    border: 2px solid transparent;
-    transition: all ease 0.3s;
-}
-
-.about-btn:hover{
-    scale: 1.1;
-    background-color: transparent;
-    color: var(--action-color);
-}
-
-.about-btn:active{
-    scale: 0.8;
+    text-align: center;
+  }
 }

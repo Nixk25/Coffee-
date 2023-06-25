@@ -1,40 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
-:root{
-    --main-color: #F9D9AA;
-    --secondary-color: #D7A474;
-    --addition-color: #F7EBDB;
-    --action-color:#E58124;
-    --btn-color:#2C1E08;
+:root {
+  --main-color: #f9d9aa;
+  --secondary-color: #d7a474;
+  --addition-color: #f7ebdb;
+  --action-color: #e58124;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-    font-family: "Oswald", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
 }
 
-
-body{
-    line-height: 1.6;
-    background-color: #1A1B1F;
-    color: #fff;
+body {
+  line-height: 1.6;
+  background-color: #1a1b1f;
+  color: #fff;
 }
 
-
-::-webkit-scrollbar{
-    display: none;
+::-webkit-scrollbar {
+  display: none;
 }
 
-.headline{
-    font-size: 40px;
-    margin-bottom: 100px;
+.headline {
+  font-size: 40px;
+  margin-bottom: 100px;
 }
 
-@media (max-width:425px){
-    .headline{
-        font-size: 30px;
-    }
+@media (max-width: 425px) {
+  .headline {
+    font-size: 30px;
+  }
 }
