@@ -1,0 +1,90 @@
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: max-content;
+  height: max-content;
+  background-color: var(--main-color);
+  margin-inline: auto;
+  color: black;
+  padding: 50px;
+  gap: 50px;
+  border-radius: 15px;
+}
+
+.form-headline {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.form-desc {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+
+.form-text {
+  font-size: 25px;
+}
+
+label {
+  margin-right: 50px;
+}
+
+input {
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 10px;
+  caret-color: var(--action-color);
+  transition: all ease 0.3s;
+}
+
+input:focus-within {
+  border: 1px solid var(--action-color);
+}
+
+hr {
+  background-color: var(--action-color);
+  color: var(--action-color);
+  height: 1px;
+  border: transparent;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.name {
+  display: flex;
+  gap: 20px;
+}
+
+.name input {
+  width: 100px;
+}
+
+select {
+  border: transparent;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+textarea {
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.full-name,
+.email,
+.phone,
+.guests,
+.type,
+.requests {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}

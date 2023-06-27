@@ -1,8 +1,16 @@
 import React from "react";
-import "./Contact.css";
+import Footer from "../Footer/Footer";
+import Nav from "../Navbar/Nav";
+import ContactForm from "./ContactForm/ContactForm";
 
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <div>
+      <Nav />
+      <ContactForm />
+      <Footer />
+    </div>
+  );
 };
 
 export default Contact;
