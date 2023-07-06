@@ -1,7 +1,15 @@
 import React from "react";
 import "./ContactForm.css";
+import { DateTimePicker } from "@mui/x-date-pickers/DateTimePicker";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import dayjs from "dayjs";
+import "dayjs/locale/en-gb";
 
 const ContactForm = () => {
+  const fiveAM = dayjs().set("hour", 5).startOf("hour");
+  const ninePM = dayjs().set("hour", 20).startOf("hour");
+  const tomorrow = dayjs().add(1, "day");
   return (
     <div>
       <div className="form-texts">
@@ -35,15 +43,27 @@ const ContactForm = () => {
         </div>
         <div className="phone">
           <label htmlFor="phone">Phone</label>
-          <input type="tel" placeholder="ex:789 909 209" name="phone" />
+          <input type="tel" placeholder="ex:789909209" name="phone" />
         </div>
         <div className="guests">
           <label htmlFor="guests">How many of you?</label>
           <input type="number" defaultValue="" name="guests" />
         </div>
-        <hr />
-        <div className="reservation"></div>
-        <hr />
+        <hr className="divider" />
+        <div className="reservation">
+          <LocalizationProvider
+            dateAdapter={AdapterDayjs}
+            adapterLocale="en-gb"
+          >
+            <DateTimePicker
+              minTime={fiveAM}
+              maxTime={ninePM}
+              minDate={tomorrow}
+              label="Your date"
+            />
+          </LocalizationProvider>
+        </div>
+        <hr className="divider" />
         <div className="type">
           <label htmlFor="type">Reservation Type</label>
           <select name="type" id="type">
@@ -62,7 +82,7 @@ const ContactForm = () => {
           <label htmlFor="requests">Any special requests</label>
           <textarea name="requests" cols="50" rows="3"></textarea>
         </div>
-        <hr />
+        <hr className="divider" />
         <button className="order-btn" type="submit">
           Submit
         </button>
