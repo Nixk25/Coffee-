@@ -1,6 +1,5 @@
 #menu {
   display: none;
-  position: relative;
 }
 
 #menu-bar {
@@ -97,10 +96,8 @@
 .change-bg {
   width: 520px;
   height: 460px;
-  position: absolute;
-  transition: all ease 0.7s;
-  left: 38%;
-  top: -30%;
+  transition: all ease 0s;
+  translate: 60% -50%;
 }
 
 @media (max-width: 600px) {

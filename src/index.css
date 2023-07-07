@@ -19,6 +19,13 @@ body {
   line-height: 1.6;
   background-color: #1a1b1f;
   color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  width: 90%;
+  margin: auto;
 }
 
 ::-webkit-scrollbar {
