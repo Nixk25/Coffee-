@@ -64,9 +64,6 @@
 .order-btn:hover {
   scale: 1.1;
   background-color: transparent;
-}
-
-.order-btn__link:hover > .order-btn {
   color: var(--action-color);
 }
 

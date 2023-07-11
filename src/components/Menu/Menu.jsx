@@ -9,6 +9,16 @@ const Menu = () => {
     document.getElementById("menu-bg").classList.toggle("change-bg");
   }
 
+  const hideMenu = () => {
+    if (document.getElementById("navbar").classList.contains("change")) {
+      document.getElementById("navbar").classList.remove("change");
+      document.getElementById("menu-bar").classList.remove("change");
+      document.getElementById("menu-bg").classList.remove("change-bg");
+    }
+  };
+
+  window.addEventListener("scroll", hideMenu);
+
   return (
     <>
       <div id="menu">

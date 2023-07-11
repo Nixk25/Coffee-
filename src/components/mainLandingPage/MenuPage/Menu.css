@@ -1,5 +1,10 @@
 .menu {
   margin-bottom: 100px;
+  transition: all ease 0.3s;
+}
+
+.menu-headline {
+  margin-bottom: 50px;
 }
 
 .menu-products {
@@ -7,6 +12,14 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
   place-items: center;
+}
+
+.filter-buttons {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 1060px) {

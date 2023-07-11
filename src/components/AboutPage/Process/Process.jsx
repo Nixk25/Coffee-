@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Process.css";
 import { Link } from "react-router-dom";
 import processImg from "../../../assets/coffee-beans.jpg";
@@ -6,8 +6,16 @@ import { FaMoneyBillWave } from "react-icons/fa";
 import { CiCoffeeBean } from "react-icons/ci";
 import { GiPush } from "react-icons/gi";
 import { BiCoffee } from "react-icons/bi";
+import WOW from "wowjs";
+import "animate.css";
 
 const Process = () => {
+  useEffect(() => {
+    new WOW.WOW({
+      live: false,
+    }).init();
+  }, []);
+
   return (
     <section className="process">
       <div className="container">
@@ -33,7 +41,7 @@ const Process = () => {
           <div className="process-right">
             <div className="reasons">
               <ul className="list-reasons">
-                <li className="first-reason">
+                <li className="first-reason wow animate__animated animate__bounceIn animate__duration-2s animate__delay-1s">
                   <span className="colored bigger">Buying it</span> <br />{" "}
                   <br />
                   <p>
@@ -48,7 +56,7 @@ const Process = () => {
                     <FaMoneyBillWave />
                   </span>
                 </li>
-                <li className="second-reason">
+                <li className="second-reason wow animate__animated animate__bounceIn animate__duration-2s animate__delay-1s">
                   <span className="colored bigger">Pressing</span> <br /> <br />
                   <p>
                     Once the coffee beans are harvested, they are carefully
@@ -61,7 +69,7 @@ const Process = () => {
                     <GiPush />
                   </span>
                 </li>
-                <li className="third-reason">
+                <li className="third-reason wow animate__animated animate__bounceIn animate__duration-2s animate__delay-1s">
                   <span className="colored bigger">Brewing</span> <br /> <br />
                   <p>
                     At our coffee shop, we take pride in our brewing process. We
@@ -74,7 +82,7 @@ const Process = () => {
                     <CiCoffeeBean />
                   </span>
                 </li>
-                <li className="fourth-reason">
+                <li className="fourth-reason wow animate__animated animate__bounceIn animate__duration-2s animate__delay-1s">
                   <span className="colored bigger">Enjoying</span> <br /> <br />
                   <p>
                     When you visit our coffee shop, you can expect to be greeted
