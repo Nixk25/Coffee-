@@ -14,7 +14,14 @@ const ContactForm = () => {
 
   const hideContactForm = (e) => {
     e.preventDefault();
-    document.getElementById("form").style.display = "none";
+    document.getElementById("form").style.opacity = "0.5";
+    document.getElementById("form").style.opacity = "0.4";
+    document.getElementById("form").style.opacity = "0.3";
+    document.getElementById("form").style.opacity = "0.2";
+    document.getElementById("form").style.opacity = "0.1";
+    window.setTimeout(function () {
+      document.getElementById("form").style.display = "none";
+    }, 300);
     document.getElementById("hiddenText").style.display = "flex";
     window.scrollTo(0, 0);
   };

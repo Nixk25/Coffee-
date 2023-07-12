@@ -45,7 +45,7 @@ const AboutUs = () => {
                 <span className="colored">delight your taste buds</span>.
               </p>
             </div>
-            <div className="about-btn__wrapper wow animate__animated animate__bounce animate__duration-2s animate__delay-1s">
+            <div className="about-btn__wrapper wow animate__animated animate__bounce animate__duration-1s ">
               <Link className="order-btn__link" to="/Contact">
                 <button className="order-btn">Get in touch</button>
               </Link>

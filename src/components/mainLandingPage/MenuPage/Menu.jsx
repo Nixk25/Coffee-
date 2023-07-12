@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Menu.css";
 import { products } from "./data-menu";
 import Product from "./Product";
 import categories from "./categories";
+import WOW from "wowjs";
 
 const Menu = () => {
   const [typeOfProduct, setTypeOfProduct] = useState("All");
@@ -11,13 +12,19 @@ const Menu = () => {
     return oneProduct["category"] === typeOfProduct;
   });
 
+  useEffect(() => {
+    new WOW.WOW({
+      live: false,
+    }).init();
+  }, []);
+
   return (
     <section className="menu">
       <div className="container">
-        <div className="headline menu-headline">
+        <div className="headline menu-headline animate__animated wow animate__backInUp animate__duration-1s ">
           Special menu <span className="colored underlined">For you </span>
         </div>
-        <div className="filter-buttons">
+        <div className="filter-buttons animate__animated wow animate__backInUp animate__duration-1s">
           {categories.map((oneCategory) => {
             return (
               <button

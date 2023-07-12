@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Newsletter.css";
+import WOW from "wowjs";
 
 const Newsletter = () => {
   function disappearFunction(event) {
@@ -7,8 +8,13 @@ const Newsletter = () => {
     document.getElementById("new-element").style.display = "flex";
     document.getElementById("bg-image__newsletter").style.display = "none";
   }
+  useEffect(() => {
+    new WOW.WOW({
+      live: false,
+    }).init();
+  }, []);
   return (
-    <section className="newsletter">
+    <section className="newsletter animate__animated wow animate__backInUp animate__duration-1s  ">
       <div className="container">
         <div id="bg-image__newsletter">
           <div id="newsletter-wrapper">

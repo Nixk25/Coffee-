@@ -41,7 +41,7 @@ const Process = () => {
           <div className="process-right">
             <div className="reasons">
               <ul className="list-reasons">
-                <li className="first-reason wow animate__animated animate__bounceIn animate__duration-2s animate__delay-1s">
+                <li className="first-reason wow animate__animated animate__bounceIn animate__duration-1s ">
                   <span className="colored bigger">Buying it</span> <br />{" "}
                   <br />
                   <p>

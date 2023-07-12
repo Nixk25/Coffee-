@@ -13,6 +13,11 @@
   border-radius: 15px;
 }
 
+#form {
+  opacity: 1;
+  transition: all ease 0.3s;
+}
+
 .form-headline {
   text-align: center;
   margin-top: 10%;
