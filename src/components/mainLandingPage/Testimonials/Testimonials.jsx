@@ -1,16 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Testimonials.css";
 import firstTestimonials from "../../../assets/third.jpg";
-import WOW from "wowjs";
 
 const Testimonials = () => {
-  useEffect(() => {
-    new WOW.WOW({
-      live: false,
-    }).init();
-  }, []);
   return (
-    <section className="team animate__animated wow animate__backInUp animate__duration-1s ">
+    <section className="team ">
       <div className="container">
         <h2 className="headline">
           What they say <span className="colored underlined">about us?</span>

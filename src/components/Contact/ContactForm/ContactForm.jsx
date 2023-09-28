@@ -14,16 +14,12 @@ const ContactForm = () => {
 
   const hideContactForm = (e) => {
     e.preventDefault();
-    document.getElementById("form").style.opacity = "0.5";
-    document.getElementById("form").style.opacity = "0.4";
-    document.getElementById("form").style.opacity = "0.3";
-    document.getElementById("form").style.opacity = "0.2";
     document.getElementById("form").style.opacity = "0.1";
     window.setTimeout(function () {
       document.getElementById("form").style.display = "none";
     }, 300);
     document.getElementById("hiddenText").style.display = "flex";
-    window.scrollTo(0, 0);
+    window.setTimeout(window.scrollTo(0, 0), 100);
   };
   return (
     <div>
@@ -84,9 +80,8 @@ const ContactForm = () => {
             </div>
             <div className="guests">
               <label htmlFor="guests">How many of you?</label>
-              <input required type="number" defaultValue="" name="guests" />
+              <input required type="text" defaultValue="1" name="guests" />
             </div>
-            <hr className="divider" />
             <div className="reservation">
               <LocalizationProvider
                 dateAdapter={AdapterDayjs}
@@ -96,11 +91,10 @@ const ContactForm = () => {
                   minTime={fiveAM}
                   maxTime={ninePM}
                   minDate={tomorrow}
-                  label="Your date"
+                  label="Date"
                 />
               </LocalizationProvider>
             </div>
-            <hr className="divider" />
             <div className="type">
               <label htmlFor="type">Reservation Type</label>
               <select required name="type" id="type">
@@ -121,7 +115,6 @@ const ContactForm = () => {
               <label htmlFor="requests">Any special requests</label>
               <textarea name="requests" cols="50" rows="3"></textarea>
             </div>
-            <hr className="divider" />
             <button className="order-btn" type="submit">
               Submit
             </button>

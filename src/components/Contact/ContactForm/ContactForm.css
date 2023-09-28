@@ -5,17 +5,28 @@
   flex-direction: column;
   width: max-content;
   height: max-content;
-  background-color: var(--main-color);
+  background-image: url("../../../assets/Animated\ Shape.svg");
+  background-position: 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-inline: auto;
   color: #000;
   padding: 50px;
   gap: 50px;
   border-radius: 15px;
+  position: relative;
 }
 
 #form {
   opacity: 1;
-  transition: all ease 0.3s;
+  transition: all ease 1s;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 
 .form-headline {
@@ -51,15 +62,6 @@ input {
 
 input:focus-within {
   border: 1px solid var(--action-color);
-}
-
-.divider {
-  background-color: var(--action-color);
-  color: var(--action-color);
-  height: 1px;
-  border: transparent;
-  border-radius: 15px;
-  width: 100%;
 }
 
 .name {

@@ -1,17 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Popular.css";
 import { products } from "./data-popular";
 import Product from "./Product";
-import WOW from "wowjs";
 
 const Popular = () => {
-  useEffect(() => {
-    new WOW.WOW({
-      live: false,
-    }).init();
-  }, []);
   return (
-    <section className="popular animate__animated wow animate__backInUp animate__duration-1s ">
+    <section className="popular ">
       <div className="container">
         <div className="headline">
           Popular <span className="colored underlined">Now</span>

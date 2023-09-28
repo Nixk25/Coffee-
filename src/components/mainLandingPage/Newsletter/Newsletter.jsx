@@ -1,20 +1,17 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Newsletter.css";
-import WOW from "wowjs";
 
 const Newsletter = () => {
   function disappearFunction(event) {
     event.preventDefault();
-    document.getElementById("new-element").style.display = "flex";
-    document.getElementById("bg-image__newsletter").style.display = "none";
+    document.querySelector(".newsletter-btn").textContent = "Loading";
+    setTimeout(() => {
+      document.getElementById("new-element").style.display = "flex";
+      document.getElementById("bg-image__newsletter").style.display = "none";
+    }, 2000);
   }
-  useEffect(() => {
-    new WOW.WOW({
-      live: false,
-    }).init();
-  }, []);
   return (
-    <section className="newsletter animate__animated wow animate__backInUp animate__duration-1s  ">
+    <section className="newsletter ">
       <div className="container">
         <div id="bg-image__newsletter">
           <div id="newsletter-wrapper">
@@ -30,11 +27,9 @@ const Newsletter = () => {
                 id="email"
                 placeholder="Email Address"
               />
-              <input
-                type="submit"
-                className="newsletter-btn"
-                value="Order Now"
-              />
+              <button type="submit" className="newsletter-btn">
+                Subscribe
+              </button>
             </form>
           </div>
         </div>
