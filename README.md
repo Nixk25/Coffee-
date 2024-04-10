@@ -1,71 +1,34 @@
-# Getting Started with Create React App
+<h1>Brewtique ☕ </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2>Intro</h2>
+Brewtique is a web project that I created for a fictional coffee shop. Although the project is not functional, it serves as a showcase for the coffee shop’s brand and offerings. I developed Brewtique to practice my frontend skills and explore different design concepts.
 
-## Available Scripts
+<h2>Tech Stack 🛠️</h2>
+The project utilizes basic frontend technologies:
+<ul>
+<li>React: For building the frontend components.</li>
+<li>Date Picker Libraries: Integrated for selecting dates (to showcase reservation functionality).</li>
+</ul>
 
-In the project directory, you can run:
+<h2>Features 🌟</h2>
+<ul>
+<li>Homepage: A visually appealing landing page with information about the coffee shop’s ambiance and menu.</li>
+<li>Responsive Design: The pages are designed to adapt to different screen sizes, ensuring a consistent experience across devices.</li>
+<li>Reservation Page: A reservation page (conceptual) where users can select a date and time for their visit.</li>
+<li>Menu Page: A menu page displaying various coffee options, pastries, and other offerings.</li>
+</ul>
 
-### `npm start`
+<h2>Process 🚀</h2>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Brewtique started as a creative exercise to design a coffee shop website. I focused on creating an elegant and user-friendly interface. Although the project lacks backend functionality, it allowed me to experiment with different design elements and improve my frontend skills.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h2>Learnings 🧠</h2>
 
-### `npm test`
+<ul>
+<li>Frontend Development: Building static web pages and components.</li>
+<li>UI/UX Design: Creating an appealing and intuitive user interface.</li>
+<li>Conceptual Projects: Exploring design concepts without full functionality.</li>
+</ul>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Coffee-
+<h2>Project Visuals 📸</h2>
+<img width="1439" alt="Snímek obrazovky 2024-04-10 v 11 59 23" src="https://github.com/Nixk25/Coffee-Shop/assets/116200689/18f805f9-0b49-4b9f-b00c-73dcda1a133a">
